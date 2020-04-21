@@ -1,0 +1,85 @@
+.text-logo{
+    font-weight: bold;
+    color: white;
+}
+
+.badge-green{
+    background-color: #28a745;
+    color: #fff;
+}
+
+.notas{
+    position: relative;
+    border-bottom: 2px dotted #00897b;
+    border-left: 2px dotted #00897b;
+    border-top: 2px dotted #00897b;
+    border-right: 2px dotted #00897b;
+    background-color: #f8f9fa;
+    max-height: 110px;
+    margin-top: 10px;
+}
+
+.notas  .fecha {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.notas .texto-notas{
+    vertical-align: middle;
+    text-align: justify;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.notas .label-evidencias{
+    vertical-align: middle;
+    text-align: right;
+    font-size: 13px;
+}
+.notas td{
+    padding: 0px;
+}
+
+.td-evidencia{
+    text-align: right;
+}
+
+.imagen{
+}
+
+.tabla-evidencias{
+    width: 100%;
+    height: 100%;
+}
+
+.mod {
+    border-right: 2px solid #8BC34A;
+    border-bottom: 2px solid #8BC34A;
+    border: 2px solid #8BC34A;
+    background-color: #8BC34A
+}
+
+[type=checkbox].filled-in:checked.chk-col-light-green+label:after {
+    border: 2px solid #8BC34A;
+    background-color: #8BC34A
+}
+
+.label-buscar{
+    margin-right: 10px;
+}
+
+.th-header{
+    background-color: #1e88e5;
+    color: #ffffff;
+    border: 0px;
+    padding: 0px;
+    border-collapse: inherit !important;
+    
+}
+
+.table-registros{
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+}

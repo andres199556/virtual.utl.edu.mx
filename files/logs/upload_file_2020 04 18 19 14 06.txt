@@ -1,0 +1,8 @@
+Numero de filas correctas: 0
+Numero de filas con errores: 1
+-------logs-----------------------
+
+
+fila: 2; resultado: existe_curp; mensaje: El curp RIBA950701HNLZRR09 de la fila 2 ya existe en el sistema.
+------------------------------
+

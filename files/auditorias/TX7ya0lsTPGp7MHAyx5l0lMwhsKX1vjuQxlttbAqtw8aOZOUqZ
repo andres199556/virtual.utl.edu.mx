@@ -1,0 +1,64 @@
+#include <EtherCard.h>
+static byte mymac[] = { 0x54, 0xEE, 0x75, 0x8B, 0x9B, 0x1B }; //declaramos la mac de la shield de ethernet
+
+byte Ethernet::buffer[700]; //declaramos la velocidad a la que va a trabajar
+static uint32_t timer;
+
+const char servidor[] = "192.168.1.100"; //especificamos la dirección del servidor donde guardaremos la información
+
+// Esta función se ejecuta cuando el cliente me da una respuesta de la información enviada
+static void callback_datos_recibidos (byte status, word off, word len) {
+  Serial.println(">>> Datos enviados correctamente!.");
+  Ethernet::buffer[off + 300] = 0;
+  Serial.print((const char*) Ethernet::buffer + off);
+  //Serial.println("...");
+}
+
+int trigger = 9; //puerto trigger del sensor de distancia
+int p_echo = 8; //puerto echo del sensor de distancia
+void setup () {
+  Serial.begin(9600);
+  ether.begin(sizeof Ethernet::buffer, mymac,10); //iniciamos el módulo de ethernet
+  ether.dhcpSetup(); //asignamos la dirección IP mediante DHCP a la shield
+  ether.printIp("Dirección IP:  ", ether.myip); //imprimimos la dirección IP Asignada
+  ether.printIp("Puerta de enlace:  ", ether.gwip); //imprimimos la puerta de enlace
+  ether.printIp("Servidor DNS: ", ether.dnsip); //imprimimos el servidor DNS asignado
+  ether.parseIp(ether.hisip, servidor); //esta función nos sirve para determinar hacia que servidor va a apuntar nuestro shield de arduino
+  ether.hisport = 50; //especificamos el puerto mediante el cual nos vamos a comunicar con nuestro servidor
+  ether.printIp("Servidor: ", ether.hisip); //imprimimos la dirección del servidor
+  pinMode(trigger, OUTPUT);
+  pinMode(p_echo, INPUT);
+}
+
+void loop () {
+  ether.packetLoop(ether.packetReceive());
+  if (millis() > timer) {
+  
+    timer = millis() + 500;
+    digitalWrite(trigger, HIGH);
+    delayMicroseconds(500);          //Enviamos un pulso de 10us
+    digitalWrite(trigger, LOW);
+
+    float  tiempo = pulseIn(p_echo, HIGH); //esta variable guardará el tiempo de reetorno del pulso enviado
+    float  distancia = tiempo / 59; //guardaremos la distancia a la que detecto el objeto
+    if (distancia > 0 && distancia <= 10) {
+      digitalWrite(7,HIGH);
+      //es un objeto cerca
+      char* buffn = ""; //Cadena donde almacenaremos el número convertido
+      dtostrf(distancia, 1, 2, buffn); //Llamada a la función
+      char buffer[8] = " "; //Buffer de la cadena donde se devuelve todo, número formateado y cadena concatenada
+      char* formato = "%s"; //Cadena con la mascara a convertir
+      sprintf(buffer, formato, buffn);
+      Serial.print("Se ha detectado un objeto a una distancia de: ");
+      Serial.print(buffn);
+      Serial.print("cm");
+      Serial.println();
+      //procedemos a enviar los datos
+      ether.browseUrl(PSTR("/promocion/subir.php?distancia="), buffn, servidor, callback_datos_recibidos);
+    }
+    else{
+      digitalWrite(7,LOW);
+    }
+  }
+
+}

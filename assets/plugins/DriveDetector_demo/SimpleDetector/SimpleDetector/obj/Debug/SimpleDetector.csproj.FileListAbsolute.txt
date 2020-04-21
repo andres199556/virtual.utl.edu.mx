@@ -1,0 +1,9 @@
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\bin\Debug\SimpleDetector.exe
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\bin\Debug\SimpleDetector.pdb
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\SimpleDetector.csprojResolveAssemblyReference.cache
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\Dolinay.DetectorForm.resources
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\SimpleDetector.Form1.resources
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\SimpleDetector.Properties.Resources.resources
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\SimpleDetector.csproj.GenerateResource.Cache
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\SimpleDetector.exe
+C:\AppServ\www\facturacion\assets\plugins\DriveDetector_demo\SimpleDetector\SimpleDetector\obj\Debug\SimpleDetector.pdb

@@ -1,0 +1,12 @@
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\bin\Debug\InputTrackingExample.exe
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\bin\Debug\InputTrackingExample.pdb
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample.csprojResolveAssemblyReference.cache
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\MainWindow.baml
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\MainWindow.g.cs
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\App.g.cs
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample_MarkupCompile.cache
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample.g.resources
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample.Properties.Resources.resources
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample.csproj.GenerateResource.Cache
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample.exe
+C:\AppServ\www\facturacion\assets\plugins\InputTrackingExample\InputTrackingExample\InputTrackingExample\obj\x86\Debug\InputTrackingExample.pdb

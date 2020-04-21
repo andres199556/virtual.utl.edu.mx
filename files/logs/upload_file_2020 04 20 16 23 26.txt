@@ -1,0 +1,5 @@
+Numero de filas correctas: 0
+Numero de filas con errores: 0
+-------logs-----------------------
+
+
