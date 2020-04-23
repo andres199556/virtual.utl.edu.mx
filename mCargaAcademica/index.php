@@ -83,12 +83,12 @@ include "../sesion/validar_permiso.php";
                                                 <thead>
                                                     <tr>
                                                         <th class="text-center">#</th>
-                                                        <th class="text-center">Nombre</th>
-                                                        <th class="text-center">Departamento</th>
-                                                        <th class="text-center">Dirección</th>
-                                                        <th class="text-center">N° empleado</th>
-                                                        <th class="text-center">Correo</th>
-                                                        <th class="text-center">Estado general</th>
+                                                        <th class="text-center">Docente</th>
+                                                        <th class="text-center">Materia</th>
+                                                        <th class="text-center">Grupo</th>
+                                                        <th class="text-center">Carrera</th>
+                                                        <th class="text-center">Sede</th>
+                                                        <th class="text-center">Estado</th>
                                                         <th class="text-center">Editar</th>
                                                         <th class="text-center">Cambiar estado</th>
                                                         <th class="text-center">Opciones</th>
