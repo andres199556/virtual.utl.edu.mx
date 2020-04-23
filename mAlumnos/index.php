@@ -333,6 +333,7 @@ include "../sesion/validar_permiso.php";
 
                 $(".pagination-footer").append('<li class="page-item" data-number="'+j+'"><a class="page-link" href="javascript:change_page('+j+');">' + j +
                     '</a></li>');
+
             }
             $("[data-number="+page+"]").addClass("active");
             $(".pagination-footer").append('<li class="page-item '+siguiente+'">' +

@@ -19,7 +19,7 @@ catch (PDOException $error) {
     echo 'Falló la conexión: ' . $error->getMessage();
 }
 
-class db_functions{
+/* class db_functions{
     public function insert_row($table,$columns,$values,$condition){
         $conexion = $GLOBALS["conexion"];
         //print_r($GLOBALS);
@@ -38,5 +38,5 @@ class db_functions{
             $res = false;
         }
     }
-}
+} */
 ?>
